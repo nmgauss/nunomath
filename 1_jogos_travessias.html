@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Jogos de Travessia | nunomath</title>
+
+<style>
+
+body {
+    font-family: Verdana, Arial, sans-serif;
+    background-color: #f5f7fa;
+    color: #222222;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 30px;
+}
+
+header {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+h1 {
+    color: #1e3a8a;
+    margin-bottom: 5px;
+}
+
+.subtitulo {
+    color: #555555;
+}
+
+.botao {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.botao a {
+    text-decoration: none;
+    background: white;
+    border: 2px solid #1e3a8a;
+    border-radius: 12px;
+    padding: 12px 20px;
+    color: #1e3a8a;
+    font-weight: bold;
+}
+
+.botao a:hover {
+    background: #1e3a8a;
+    color: white;
+}
+
+.caixa {
+    background: white;
+    border-radius: 12px;
+    padding: 25px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+    margin-bottom: 25px;
+}
+
+h2 {
+    color: #1e3a8a;
+    margin-top: 0;
+}
+
+h3 {
+    color: #1e3a8a;
+}
+
+details {
+    background: white;
+    border-radius: 12px;
+    margin-bottom: 15px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+}
+
+summary {
+    padding: 15px;
+    cursor: pointer;
+    font-weight: bold;
+    color: #1e3a8a;
+}
+
+.conteudo {
+    padding: 0 20px 20px 20px;
+}
+
+ul {
+    line-height: 1.6;
+}
+
+.indice a {
+    text-decoration: none;
+    color: #1e3a8a;
+}
+
+.indice a:hover {
+    text-decoration: underline;
+}
+
+.jogo {
+    margin-top: 15px;
+    padding: 12px;
+    background: #eef4ff;
+    border-left: 4px solid #1e3a8a;
+    border-radius: 6px;
+}
+
+footer {
+    text-align: center;
+    margin-top: 30px;
+    color: #666666;
+    font-size: 0.9em;
+}
+
+</style>
+</head>
+
+<body>
+
+<div class="container">
+
+<header>
+    <h1>🚣 Jogos de Travessia</h1>
+    <div class="subtitulo">
+        Problemas clássicos de lógica com dificuldade progressiva
+    </div>
+</header>
+
+<div class="botao">
+    <a href="index.html">🏠 Início</a>
+</div>
+
+<div class="caixa">
+
+<h2>Introdução</h2>
+
+<p>
+Explora e resolve os problemas de travessia seguintes, pela ordem apresentada (1 a 7), considerando a progressão gradual do grau de dificuldade.
+</p>
+
+<p>
+Em cada desafio, procura alcançar a meta mínima de movimentos ou tempo e regista as etapas de resolução.
+</p>
+
+</div>
+
+<div class="caixa indice">
+
+<h2>Índice</h2>
+
+<ul>
+<li><a href="#j1">1. Lobo, ovelha e couve</a></li>
+<li><a href="#j2">2. Dez sapos</a></li>
+<li><a href="#j3">3. Torre de Hanói</a></li>
+<li><a href="#j4">4. Missionários e canibais</a></li>
+<li><a href="#j5">5. Pais e filhas</a></li>
+<li><a href="#j6">6. Ponte escura</a></li>
+<li><a href="#j7">7. Jangada</a></li>
+</ul>
+
+</div>
+
+<details id="j1">
+<summary>1. Lobo, ovelha e couve</summary>
+<div class="conteudo">
+
+<h3>Enunciado</h3>
+<p>Um camponês encontra-se numa margem de um rio com um lobo, uma ovelha e uma couve. Dispõe de um barco para atravessar para a outra margem do rio. Respeitando as regras, como pode transportar todos para a outra margem?</p>
+
+<h3>Objetivo</h3>
+<p>Atravessar o lobo (L), a ovelha (O) e a couve (C) para a outra margem do rio.</p>
+
+<h3>Regras</h3>
+<ul>
+<li>O barco transporta o camponês e apenas um elemento de cada vez.</li>
+<li>O lobo não pode ficar sozinho com a ovelha sem a presença do camponês.</li>
+<li>A ovelha não pode ficar sozinha com a couve sem a presença do camponês.</li>
+</ul>
+
+<h3>Ponto de partida</h3>
+<p>L O C | __ __ __</p>
+
+<h3>Meta</h3>
+<p>7 travessias</p>
+
+<div class="jogo">🎮 Jogo interativo a inserir posteriormente.</div>
+
+</div>
+</details>
+
+<details id="j2">
+<summary>2. Dez sapos</summary>
+<div class="conteudo">
+
+<h3>Enunciado</h3>
+<p>Cinco sapos encontram-se de um lado de uma fila de nenúfares e outros cinco do lado oposto. Cada grupo de sapos pretende ocupar os lugares inicialmente ocupados pelo outro. Respeitando as regras, como podem trocar de posição?</p>
+
+<h3>Objetivo</h3>
+<p>Trocar a posição dos 5 sapos azuis (A) com os 5 sapos verdes (V).</p>
+
+<h3>Regras</h3>
+<ul>
+<li>Os sapos azuis movem-se apenas para a direita.</li>
+<li>Os sapos verdes movem-se apenas para a esquerda.</li>
+<li>Um sapo pode avançar para um nenúfar vazio adjacente.</li>
+<li>Um sapo pode saltar sobre um único sapo de outra cor para o nenúfar vazio seguinte.</li>
+<li>Não é permitido recuar.</li>
+</ul>
+
+<h3>Ponto de partida</h3>
+<p>A A A A A __ V V V V V</p>
+
+<h3>Meta</h3>
+<p>35 movimentos</p>
+
+<div class="jogo">🎮 Jogo interativo a inserir posteriormente.</div>
+
+</div>
+</details>
+
+<details id="j3">
+<summary>3. Torre de Hanói</summary>
+<div class="conteudo">
+
+<h3>Enunciado</h3>
+<p>Três discos de tamanhos diferentes encontram-se empilhados numa haste, de forma que cada disco menor está assente sobre um disco maior. As outras duas hastes encontram-se vazias. Respeitando as regras, como se pode transferir toda a torre de discos para outra haste?</p>
+
+<h3>Objetivo</h3>
+<p>Transferir todos os discos (maior – 3, médio – 2 e menor – 1) da haste inicial (A) para a haste final (C), utilizando a haste intermédia (B) como auxiliar.</p>
+
+<h3>Regras</h3>
+<ul>
+<li>Só é permitido mover um disco de cada vez.</li>
+<li>Apenas pode ser movido o disco que se encontra no topo de uma haste.</li>
+<li>Um disco maior nunca pode ser colocado sobre um disco mais pequeno.</li>
+</ul>
+
+<h3>Ponto de partida</h3>
+<p>A: 3 2 1 | B: __ __ __ | C: __ __ __</p>
+
+<h3>Meta</h3>
+<p>7 movimentos (3 discos) | 15 movimentos (4 discos)</p>
+
+<div class="jogo">🎮 Jogo interativo a inserir posteriormente.</div>
+
+</div>
+</details>
+
+<details id="j4">
+<summary>4. Missionários e canibais</summary>
+<div class="conteudo">
+
+<h3>Enunciado</h3>
+<p>Três missionários e três canibais encontram-se numa margem de um rio. Dispõem de um barco para atravessar para a outra margem do rio. Respeitando as regras, como podem todos atravessar o rio em segurança?</p>
+
+<h3>Objetivo</h3>
+<p>Atravessar os 3 missionários (M) e os 3 canibais (C) para a outra margem do rio.</p>
+
+<h3>Regras</h3>
+<ul>
+<li>O barco não pode atravessar o rio sem ninguém.</li>
+<li>O barco transporta, no máximo, duas pessoas de cada vez.</li>
+<li>Os missionários nunca podem ficar em minoria relativamente aos canibais em qualquer margem.</li>
+</ul>
+
+<h3>Ponto de partida</h3>
+<p>M M M C C C | __ __ __ __ __ __</p>
+
+<h3>Meta</h3>
+<p>11 travessias</p>
+
+<div class="jogo">🎮 Jogo interativo a inserir posteriormente.</div>
+
+</div>
+</details>
+
+<details id="j5">
+<summary>5. Pais e filhas</summary>
+<div class="conteudo">
+
+<h3>Enunciado</h3>
+<p>Três pais e as suas três filhas encontram-se numa margem de um rio. Dispõem de um barco para atravessar para a outra margem. Respeitando as regras, como podem todos atravessar o rio?</p>
+
+<h3>Objetivo</h3>
+<p>Atravessar os 3 pais (calças de cores Verde, Azul e Amarelo – PV, PA e PM) e as respetivas 3 filhas (calções de cores Verde, Azul e Amarelo – FV, FA e FM) para a outra margem do rio.</p>
+
+<h3>Regras</h3>
+<ul>
+<li>O barco não pode atravessar o rio sem ninguém.</li>
+<li>O barco transporta, no máximo, duas pessoas de cada vez.</li>
+<li>Nenhuma filha pode permanecer na companhia de outro pai sem a presença do seu próprio pai.</li>
+</ul>
+
+<h3>Ponto de partida</h3>
+<p>PV FV PA FA PM FM | __ __ __ __ __ __</p>
+
+<h3>Meta</h3>
+<p>11 travessias</p>
+
+<div class="jogo">🎮 Jogo interativo a inserir posteriormente.</div>
+
+</div>
+</details>
+
+<details id="j6">
+<summary>6. Ponte escura</summary>
+<div class="conteudo">
+
+<h3>Enunciado</h3>
+<p>Cinco membros de uma família encontram-se perante uma ponte escura. Precisam de chegar ao outro lado e, para iluminar o caminho, possuem apenas uma lanterna que dura 30 segundos. Respeitando as regras, como podem todos atravessar a ponte antes que a lanterna se apague?</p>
+
+<h3>Objetivo</h3>
+<p>Atravessar o Filho (F), o Pai (P), a Mãe (M), o Avô (O) e a Avó (A) pela ponte escura.</p>
+
+<h3>Regras</h3>
+<ul>
+<li>A lanterna tem de acompanhar sempre quem atravessa a ponte.</li>
+<li>Atravessam, no máximo, duas pessoas de cada vez.</li>
+<li>Quando duas pessoas atravessam juntas, deslocam-se à velocidade da pessoa mais lenta.</li>
+</ul>
+
+<h3>Ponto de partida</h3>
+<p>F P M O A | __ __ __ __ __</p>
+
+<h3>Meta</h3>
+<p>29 segundos</p>
+
+<div class="jogo">
+Filho (F) – 1 s | Pai (P) – 3 s | Mãe (M) – 6 s | Avô (O) – 8 s | Avó (A) – 12 s
+<br><br>
+🎮 Jogo interativo a inserir posteriormente.
+</div>
+
+</div>
+</details>
+
+<details id="j7">
+<summary>7. Jangada</summary>
+<div class="conteudo">
+
+<h3>Enunciado</h3>
+<p>Um polícia, um prisioneiro, um pai, uma mãe, dois meninos e duas meninas encontram-se numa margem de um rio. Dispõem de uma jangada para atravessar para a outra margem. Respeitando as regras, como podem todos atravessar o rio?</p>
+
+<h3>Objetivo</h3>
+<p>Atravessar o Polícia (C), o Prisioneiro (T), o Pai (F), a Mãe (M), os Meninos (B1 e B2) e as Meninas (G1 e G2) para a outra margem do rio.</p>
+
+<h3>Regras</h3>
+<ul>
+<li>Apenas o Polícia (C), o Pai (F) e a Mãe (M) podem conduzir a jangada.</li>
+<li>A jangada transporta, no máximo, duas pessoas de cada vez.</li>
+<li>O Prisioneiro (T) não pode ficar com a família sem a presença do Polícia (C).</li>
+<li>Os Meninos (B1 e B2) não podem ficar apenas com a Mãe (M) sem a presença do Pai (F).</li>
+<li>As Meninas (G1 e G2) não podem ficar apenas com o Pai (F) sem a presença da Mãe (M).</li>
+</ul>
+
+<h3>Ponto de partida</h3>
+<p>C T F M B1 B2 G1 G2 | __ __ __ __ __ __ __ __</p>
+
+<h3>Meta</h3>
+<p>17 travessias</p>
+
+<div class="jogo">🎮 Jogo interativo a inserir posteriormente.</div>
+
+</div>
+</details>
+
+<footer>
+© 2026 nunomath
+</footer>
+
+</div>
+
+</body>
+</html>
